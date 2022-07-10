@@ -1,0 +1,22 @@
+<div class="body-all">
+
+   <div class="body-name">
+        <img src="{{flags.png}}" alt="{{name.official}}" width="40" ;>
+        <h1 class="card-name">{{name.official}}</h1>
+   </div>
+  <div class="body-info"><h2 class="card-text">capital:</h2>
+       <p class="info"> {{capital}}</p></div>
+  <div class="body-info"><h2 class="card-text">population:</h2>
+       <p class="info"> {{population}}</p></div>
+        
+        
+       
+ <div class="body-info">
+
+    <h2 class="card-text">languages:</h2>
+   <p class="info"> {{#each languages}}
+{{this}} {{#unless @last}}, {{/unless}}
+
+     {{/each}}</p>
+ </div>
+</div>

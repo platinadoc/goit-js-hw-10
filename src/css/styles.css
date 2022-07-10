@@ -11,10 +11,49 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+li {
+  list-style: none;
+}
+p {
+  margin: 0;
+}
 
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.list:not(:last-child) {
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 20;
+  padding-left: 5px;
+  margin: 0;
+}
+.body-all {
+  margin-left: 40px;
+}
+.body-info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.body-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card-name {
+  margin: 0;
+  padding-left: 5px;
+}
+.info {
+  padding-left: 5px;
 }
